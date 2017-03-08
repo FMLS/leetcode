@@ -26,7 +26,7 @@ int* lengthOfLongestSubstring(char* s) {
 
             }
 
-            if (num > primes[index] && (num % primes[index] == 0)) {
+            if (num >= primes[index] && (num % primes[index] == 0)) {
                 num = 1;
                 now_length = 0;
                 i = j - 1;
@@ -60,7 +60,7 @@ int* lengthOfLongestSubstring(char* s) {
 }
 
 int main(void) {
-   char a[] = "qvbuatkzwoyxke";
+   char a[] = "dvdf";
  //   int i = 0;
  //   for ( i = 0; i < strlen(a); i++) {
  //       printf("%c : %d \n", a[i], a[i] % 26);
